@@ -1,1 +1,103 @@
-<!-- Homepage coming soon -->
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HireSight-Pro | AI Hiring & Resume Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    .glow-btn {
+      border: 2px solid #00f2fe;
+      animation: pulse 2s infinite;
+    }@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 242, 254, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 242, 254, 0);
+  }
+}
+
+  </style>
+</head><body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">  <!-- Loading Screen -->  <div id="loading" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+    <div class="loader ease-linear rounded-full border-4 border-t-4 border-blue-500 h-12 w-12 mb-4 animate-spin"></div>
+  </div>  <!-- Navbar -->  <nav class="bg-white dark:bg-gray-800 shadow sticky top-0 z-40">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">HireSight-Pro</h1>
+      <div class="space-x-4">
+        <a href="#features" class="hover:underline">Features</a>
+        <a href="#testimonials" class="hover:underline">Testimonials</a>
+        <a href="#subscribe" class="hover:underline">Newsletter</a>
+        <button id="dark-toggle" class="ml-4 text-xl"><i class="fas fa-moon"></i></button>
+      </div>
+    </div>
+  </nav>  <!-- Hero Section -->  <section class="relative h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-blue-500 to-indigo-700 text-white">
+    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_dycczexg.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Revolutionizing Resume & Hiring</h2>
+    <p class="mb-8 max-w-xl">AI-powered insights, interactive dashboards, and real-time engagement between students and companies.</p>
+    <a href="#features" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full glow-btn">Explore Features</a>
+  </section>  <!-- Resume Score Tracker (Floating badge) -->  <div class="fixed top-20 right-2 bg-yellow-400 text-black px-3 py-2 rounded shadow-md animate-bounce z-50">
+    🎯 Weekly Resume Score: 82%
+  </div>  <!-- Features -->  <section id="features" class="py-16 px-6 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Platform Features</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+          <i class="fas fa-brain text-4xl text-blue-500 mb-4"></i>
+          <h4 class="text-xl font-bold mb-2">AI Resume Insights</h4>
+          <p>Instant feedback and improvement tips for better hiring outcomes.</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+          <i class="fas fa-chart-line text-4xl text-green-500 mb-4"></i>
+          <h4 class="text-xl font-bold mb-2">Dashboard Analytics</h4>
+          <p>Track resume performance, HR interest, and profile engagement weekly.</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+          <i class="fas fa-user-shield text-4xl text-purple-500 mb-4"></i>
+          <h4 class="text-xl font-bold mb-2">Secure Student-HR Logins</h4>
+          <p>Role-based access to ensure personalized and protected experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Testimonials -->  <section id="testimonials" class="py-20 bg-blue-100 dark:bg-gray-800">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">What People Say</h3>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow">
+          <p class="mb-4">“HireSight-Pro helped me identify top candidates within minutes. It changed how we shortlist resumes!”</p>
+          <div class="font-bold">— Priya K., HR Manager</div>
+        </div>
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow">
+          <p class="mb-4">“The resume score tracker is my favorite feature. It keeps me improving every week.”</p>
+          <div class="font-bold">— Rahul M., Final Year Student</div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Newsletter Signup -->  <section id="subscribe" class="py-16 bg-white dark:bg-gray-900 text-center">
+    <h3 class="text-2xl font-bold mb-4">Stay Updated 🚀</h3>
+    <p class="mb-6">Subscribe to get updates about internships, resume tips, and hiring trends.</p>
+    <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-lg border dark:bg-gray-800">
+    <button class="ml-2 px-4 py-2 bg-blue-600 text-white rounded-lg">Subscribe</button>
+  </section>  <!-- Chatbot Icon -->  <div class="fixed bottom-4 right-4 z-50">
+    <button class="bg-blue-600 text-white p-3 rounded-full shadow-lg">
+      <i class="fas fa-robot"></i>
+    </button>
+  </div>  <!-- Footer -->  <footer class="py-6 bg-gray-800 text-white text-center">
+    <p>Designed & built by <a href="https://github.com/Mohammedkajamuiz" class="underline">@Mohammedkajamuiz</a> | <a href="https://www.linkedin.com/in/mohammed-kaja-muiz" class="underline">LinkedIn</a></p>
+    <p class="mt-2 text-sm">&copy; 2025 HireSight-Pro. All rights reserved.</p>
+  </footer>  <!-- Scripts -->  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('dark-toggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    // Loading animation
+    window.addEventListener('load', () => {
+      document.getElementById('loading').style.display = 'none';
+    });
+  </script></body></html>
